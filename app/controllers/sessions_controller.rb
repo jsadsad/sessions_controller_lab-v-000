@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       redirect_to new_sessions_path
     else
       session[:name] = params[:name]
-      redirect_to :root
+      redirect_to '/'
     end
   end
 
