@@ -15,5 +15,5 @@ class SessionsController < ApplicationController
       session.delete :name
     end
       redirect_to '/'
-    end
+  end
 end
