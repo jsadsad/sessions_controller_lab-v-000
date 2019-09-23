@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       redirect_to :login
     else
       session[:name] = params[:name]
-      redirect_to '/'
+      redirect_to :root
     end
   end
 
