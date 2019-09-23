@@ -15,6 +15,6 @@ class SessionsController < ApplicationController
     if !session[:name].nil?
       session.delete :name
     end
-    redirect_to '/'
+    redirect_to :root
   end
 end
